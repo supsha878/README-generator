@@ -1,10 +1,10 @@
 # Project Title
 
-![license badge](https://img.shields.io/static/v1?label=license&message=MIT&color=green&style=flat)
+![license badge](https://img.shields.io/static/v1?label=license&message=MIT&color=blue&style=flat-square)
 
 ## Description
 
-This is where I put the description of the project
+Short description of the project explaining the what, why, and how
 
 ## Table of Contents
 
@@ -17,13 +17,15 @@ This is where I put the description of the project
 
 ## Installation
 
-Steps for installation
+The steps to install this project
 
 ## Usage
 
-How to use said prject
+Instructions and examples of use
 
 ## License
+
+**MIT License**
 
 >A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
 
@@ -31,12 +33,12 @@ How to use said prject
 
 ## Contribute
 
-How should other people contribute to this project
+How other developers should contribute to the project
 
 ## Tests
 
-How should testing be gone about
+How to test and testing examples
 
 ## Questions
 
-If you have any additional questions about this product, go to my [GitHub](https://github.com/supsha878) profile or email me at nar.
+If you have any additional questions about this product, go to my [GitHub](https://github.com/supsha878) profile or email me at sharmasup565@gmail.com.
