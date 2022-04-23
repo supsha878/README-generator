@@ -1,29 +1,29 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
 const content = require("./develop/utils/generateMarkdown");
 
-// TODO: Create an array of questions for user input
+// Create an array of questions for user input
 const questions = ["What is the title of this project?",
 "What is this project's description?",
 "How do you install this project?",
 "What are your project's instructions for use?",
-"license", // TODO
+"Please select an open source license for your project:",
 "What are the guidelines for contributing to this project?",
 "How should this project be tested?",
 "Please enter your GitHub username:",
 "Please enter your email address:"];
 
-// Create a function to write README file
+// Function to write README file
 function writeToFile(fileName, data) {
     var text = content.generateMarkdown(data);
-    // file path added for sample README
+    // file path added for sample READMEs
     fs.writeFile("sample-README/" + fileName, text, (err) =>
         err ? console.log(err) : console.log("success")
     );
 }
 
-// TODO: Create a function to initialize app
+// Function to initialize app
 function init() {
     inquirer
         .prompt([
@@ -51,7 +51,14 @@ function init() {
                 type: "list",
                 name: "license",
                 message: questions[4],
-                choices: ["one", "two", "three"]
+                choices: ["GNU AGPLv3",
+                    "GNU GPLv3",
+                    "GNU LGPLv3",
+                    "Mozilla Public License 2.0",
+                    "Apache License 2.0", "MIT License",
+                    "Boost Software License 1.0",
+                    "The Unilicense",
+                    "No License"]
             },
             {
                 type: "input",
